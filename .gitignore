@@ -1,17 +1,40 @@
-# Libraries
-*.lvlibp
-*.llb
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# General
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+*.tmp
 
-# Executables
-*.exe
+# Node
+node_modules/
 
-# Metadata
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# .NET
+bin/
+obj/
+
+# Go
+bin/
+
+# LabVIEW
 *.aliases
 *.lvlps
-.cache/
+*.lvbitx
+*.lvbit
+*.lvlibp
+*.cache/
+# Compiled code cache
+*/CompiledCode/*
+
+# OS / build artifacts
+*.zip
+*.7z
+*.tar
+*.gz
