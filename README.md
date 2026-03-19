@@ -48,8 +48,8 @@ labview-grpc-polyglot-demo/
 ---
 
 ## References
-- NI **grpc‑labview** – gRPC client/server support for LabVIEW: https://github.com/ni/grpc-labview citeturn1search2
-- NI – How to use gRPC with NI Software and Hardware: https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000oxQGCAY citeturn1search7
-- NI – Installing LabVIEW gRPC Library (VIPM): https://www.ni.com/docs/en-US/bundle/bts-16110/page/install-labview-grpc-library.html citeturn1search6
-- gRPC Docs – Introduction & Protocol Buffers: https://grpc.io/docs/what-is-grpc/introduction/ citeturn1search8
-- Microsoft Learn – gRPC services & method types (unary/streaming): https://learn.microsoft.com/en-us/aspnet/core/grpc/services citeturn1search9
+- NI **grpc‑labview** – gRPC client/server support for LabVIEW: https://github.com/ni/grpc-labview
+- NI – How to use gRPC with NI Software and Hardware: https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000oxQGCAY
+- NI – Installing LabVIEW gRPC Library (VIPM): https://www.ni.com/docs/en-US/bundle/bts-16110/page/install-labview-grpc-library.html
+- gRPC Docs – Introduction & Protocol Buffers: https://grpc.io/docs/what-is-grpc/introduction/
+- Microsoft Learn – gRPC services & method types (unary/streaming): https://learn.microsoft.com/en-us/aspnet/core/grpc/services
