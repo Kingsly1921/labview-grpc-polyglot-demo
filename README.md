@@ -38,12 +38,12 @@ labview-grpc-polyglot-demo/
 ## Quick Start (Top Level)
 
 1. **Clone & set up tools**
-   - Install **LabVIEW gRPC Library** using **VIPM** (LabVIEW 2019+). citeturn1search6
-   - Install language SDKs for gRPC in Python/.NET/Node/Go as needed (see language folders below). See gRPC introduction for background. citeturn1search8
+   - Install **LabVIEW gRPC Library** using **VIPM** (LabVIEW 2019+).
+   - Install language SDKs for gRPC in Python/.NET/Node/Go as needed (see language folders below). See gRPC introduction for background.
 2. **Open LabVIEW examples** under `prototypes/*` or the polyglot demo under `demos/polyglot`.
-3. **Generate bindings from .proto** using each language’s tooling (examples included per folder). Streaming methods use the `stream` keyword in `.proto`. citeturn1search9
+3. **Generate bindings from .proto** using each language’s tooling (examples included per folder). Streaming methods use the `stream` keyword in `.proto`.
 
-> **NI grpc‑labview** repository includes examples and notes on supported targets (Windows, Linux, NI Linux RT). citeturn1search2
+> **NI grpc‑labview** repository includes examples and notes on supported targets (Windows, Linux, NI Linux RT).
 
 ---
 
