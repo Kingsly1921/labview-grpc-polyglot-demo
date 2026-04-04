@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "labview.Communication";
+option java_outer_classname = "Comm";
+option objc_class_prefix = "HLW";
+package Communication;
+
+service Communicate
+{
+rpc Stream(ControlStream) returns (stream StreamData){}
+}
+message ControlStream
+{
+bool Start=1;
+}
+message StreamData
+{
+int32 data=1;
+bool Status=2;
+}
