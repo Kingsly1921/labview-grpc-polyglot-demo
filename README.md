@@ -12,21 +12,27 @@ This repository contains two parts:
 ## Repository Map
 
 ```
-labview-grpc-polyglot-demo/
-  ├─ prototypes/
-  │   ├─ proto/                     # Shared .proto contracts for prototype services
-  │   ├─ unary/                     # Simple request/response
-  │   ├─ server_streaming/          # Server stream (progress/events)
-  │   ├─ multiple_streaming/        # Client stream (batch upload)
-  │
-  └─ demos/
-      └─ polyglot/
-          ├─ proto/                 # Canonical .proto for the demo service
-          ├─ labview/               # LabVIEW server/client projects (placeholders)
-          ├─ python/                # Python client or server
-          ├─ csharp/                # .NET client or server
-          ├─ nodejs/                # Node.js client or server
-          └─ go/                    # Go client or server
+grpc_polyglot_demo/
+│
+├── proto/
+│     └── measurement.proto
+│
+├── server_labview/
+│     └── VI-based implementation
+│
+├── client_python/
+│     ├── client.py
+│     ├── requirements.txt
+│
+├── client_cpp/
+│     ├── CMakeLists.txt
+│     └── main.cpp
+│
+├── client_js/
+│     ├── package.json
+│     ├── index.js
+│
+└── README.md
 ```
 
 ---
