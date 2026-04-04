@@ -2,7 +2,7 @@
 
 This repository contains two parts:
 
-1. **`/prototypes`** – Minimal LabVIEW-first examples that cover **all RPC types** supported by gRPC (unary, server streaming, client streaming, bidirectional streaming) plus **auth/TLS**, **error handling**, and notes for **load balancing/health**.
+1. **`/prototypes`** – Minimal LabVIEW-first examples that cover **all RPC types** supported by gRPC (unary, server streaming).
 2. **`/demos/polyglot`** – End-to-end demo for your talk **_“Building Scalable Multi‑Language Frameworks Using gRPC”_**, showing LabVIEW working with Python, C#, Node.js, and Go clients/servers using a shared `.proto` contract.
 
 > Built around NI’s **grpc-labview** project and the official gRPC docs. See references at the end.
@@ -17,11 +17,7 @@ labview-grpc-polyglot-demo/
   │   ├─ proto/                     # Shared .proto contracts for prototype services
   │   ├─ unary/                     # Simple request/response
   │   ├─ server_streaming/          # Server stream (progress/events)
-  │   ├─ client_streaming/          # Client stream (batch upload)
-  │   ├─ bidirectional_streaming/   # Duplex streaming (advanced)
-  │   ├─ auth_tls/                  # TLS/mTLS setup notes & placeholders
-  │   ├─ error_handling/            # Status codes & rich errors
-  │   └─ load_balancing/            # Notes & config for scaling patterns
+  │   ├─ multiple_streaming/        # Client stream (batch upload)
   │
   └─ demos/
       └─ polyglot/
