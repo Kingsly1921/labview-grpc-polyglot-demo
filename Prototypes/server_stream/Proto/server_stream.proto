@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package Acquisition;
+
+service Random_Data
+{
+rpc Stream(Control_Stream) returns (stream Stream_Data){}
+}
+message Control_Stream
+{
+bool Start=1;
+}
+message Stream_Data
+{
+int32 Data=1;
+bool Status=2;
+}
