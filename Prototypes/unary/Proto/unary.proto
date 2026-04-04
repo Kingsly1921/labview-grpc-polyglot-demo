@@ -1,22 +1,19 @@
 syntax = "proto3";
 
-option java_multiple_files = true;
-option java_package = "labview.Communication";
-option java_outer_classname = "Comm";
-option objc_class_prefix = "HLW";
-package Communication;
+package Protocol;
 
-service Communicate
+service I2C
 {
-rpc Transmission(ActionRequest) returns (ActionReply) {}
+  // Configure the I2C device with the given request and return the response.
+  rpc Configure(Request) returns (Response) {}
 }
-message ActionRequest
+message Request
 {
 string Request=1;
 string Data=2;
 }
-message ActionReply
+message Response
 {
-string Reply=1;
-string Status=2;
+Request Operation=1;
+bool Status=2;
 }
