@@ -8,7 +8,7 @@ rpc Stream(Control_Stream) returns (stream Stream_Data){}
 }
 message Control_Stream
 {
-bool Start=1;
+int32 Count=1;
 }
 message Stream_Data
 {
