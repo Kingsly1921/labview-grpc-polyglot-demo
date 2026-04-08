@@ -22,17 +22,25 @@ grpc_polyglot_demo/
 │
 ├── client_python/
 │     ├── client.py
-│     ├── requirements.txt
+│     ├── measurement.proto
+│     ├── measurement_pb2.py
+│     ├── measurement_pb2_grpc.py
+│     └── requirements.txt
 │
-├── client_cpp/
-│     ├── CMakeLists.txt
-│     └── main.cpp
+├── client_go/
+│     ├── measurement/
+│           ├── measurement.pb.go
+│           └── measurement_grpc.pb.go
+│     ├── go.mod
+│     ├── go.sum
+│     ├──main.go
+│     └──measurement.proto
 │
-├── client_js/
-│     ├── package.json
-│     ├── index.js
-│
-└── README.md
+└── client_js/
+      ├── package.json
+      └──index.js
+
+
 ```
 
 ---
