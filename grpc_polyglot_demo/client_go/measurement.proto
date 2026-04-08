@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package measurement;
+
+option go_package = "client_go/measurement";
+
+// The LabVIEW Measurement Service
+service MeasurementService {
+    rpc GetStatus (StatusRequest) returns (StatusResponse);
+    rpc AcquireSensorData (DataRequest) returns (DataResponse);
+    rpc ProcessData (ProcessRequest) returns (ProcessResponse);
+    rpc StreamSensorData (StreamRequest) returns (stream DataPoint);
+}
+
+message StatusRequest {}
+
+message StatusResponse {
+    string server_time = 1;
+    string version = 2;
+}
+
+message DataRequest {
+    int32 sample_count = 1;
+}
+
+message DataResponse {
+    repeated double values = 1;
+}
+
+message ProcessRequest {
+    repeated double input_values = 1;
+}
+
+message ProcessResponse {
+    double rms = 1;
+    double average = 2;
+}
+
+message StreamRequest {
+    int32 interval_ms = 1;
+}
+
+message DataPoint {
+    double value = 1;
+    int64 timestamp = 2;
+}
