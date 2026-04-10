@@ -51,7 +51,7 @@ func main() {
 		log.Fatalf("❌ StreamSensorData error: %v", err)
 	}
 
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 10; i++ {
 		dp, err := stream.Recv()
 		if err != nil {
 			log.Fatalf("❌ Stream read error: %v", err)
