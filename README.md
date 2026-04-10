@@ -3,7 +3,7 @@
 This repository contains two parts:
 
 1. **`/prototypes`** – Minimal LabVIEW-first examples that cover **all RPC types** supported by gRPC (unary, server streaming).
-2. **`/demos/polyglot`** – End-to-end demo for your talk **_“Building Scalable Multi‑Language Frameworks Using gRPC”_**, showing LabVIEW working with Python, C#, Node.js, and Go clients/servers using a shared `.proto` contract.
+2. **`/grpc_polyglot_demo`** – End-to-end demo for your talk **_“Building Scalable Multi‑Language Frameworks Using gRPC”_**, showing LabVIEW working with Python, C#, Node.js, and Go clients/servers using a shared `.proto` contract.
 
 > Built around NI’s **grpc-labview** project and the official gRPC docs. See references at the end.
 
@@ -22,17 +22,25 @@ grpc_polyglot_demo/
 │
 ├── client_python/
 │     ├── client.py
-│     ├── requirements.txt
+│     ├── measurement.proto
+│     ├── measurement_pb2.py
+│     ├── measurement_pb2_grpc.py
+│     └── requirements.txt
 │
-├── client_cpp/
-│     ├── CMakeLists.txt
-│     └── main.cpp
+├── client_go/
+│     ├── measurement/
+│           ├── measurement.pb.go
+│           └── measurement_grpc.pb.go
+│     ├── go.mod
+│     ├── go.sum
+│     ├──main.go
+│     └──measurement.proto
 │
-├── client_js/
-│     ├── package.json
-│     ├── index.js
-│
-└── README.md
+└── client_js/
+      ├── package.json
+      └──index.js
+
+
 ```
 
 ---
