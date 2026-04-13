@@ -48,7 +48,7 @@ def plot_data(data):
 def stream_data(stub):
     print("✅ Streaming Data (Ctrl+C to stop)")
     stream = stub.StreamSensorData(
-        measurement_pb2.StreamRequest(interval_ms=500)
+        measurement_pb2.StreamRequest(interval_ms=100)
     )
 
     try:
